@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
  *main - prints the size of data types
- *
  *warning Allowed
  *Return: returns 0
-  */
+ */
 int main(void)
 {
 printf("Size of a char: %zu byte(s)\n", sizeof(char));
