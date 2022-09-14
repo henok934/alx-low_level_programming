@@ -3,31 +3,32 @@
 /**
  * main - print putchar
  * Return: always 0
- * */
-
-
+ */
 
 int main(void)
 
 {
-	
-_putchar('_');
 
-_putchar('p');
+	_putchar('_');
 
-_putchar('u');
+	_putchar('p');
 
-_putchar('t');
+	_putchar('u');
 
-_putchar('c');
+	_putchar('t');
 
-_putchar('h');
-	
-_putchar('a');
+	_putchar('c');
 
-_putchar('r');
+	_putchar('h');
 
-_putchar('\n');
+	_putchar('a');
 
-return (0);
+	_putchar('r');
+
+	_putchar('\n');
+
+	return (0);
+
 }
+
+
