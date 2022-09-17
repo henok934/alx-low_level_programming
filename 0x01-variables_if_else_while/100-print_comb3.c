@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int firet, second;
+	int first, second;
 
 	for (first = 0; first <= 9; first++)
 	{
