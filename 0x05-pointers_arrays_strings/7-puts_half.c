@@ -31,10 +31,10 @@ putchar(10);
 
 
 /**
- *_strlen - returns the length of a string* 
- * @s: string
- * Return: the length of the given string
- */
+* _strlen - returns the length of a string 
+* @s: string
+* Return: the length of the given string
+*/
 
 
 
