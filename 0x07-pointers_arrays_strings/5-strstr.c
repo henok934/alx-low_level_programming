@@ -3,10 +3,13 @@
 /**
 * _strstr - Finds the firsst occurance of the substring needle in
 * the string haystack.
+*
 * @haystack: The string to be searched
 * @needle: The sub string to be located
+*
 * Return: Returns a pointer to the beginning of the located
 * substring, or NULL if the sub string is not found
+*
 */
 
 char  *_strstr(char *haystack, char *needle)
