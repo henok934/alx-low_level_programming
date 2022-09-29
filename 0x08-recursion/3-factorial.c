@@ -9,7 +9,6 @@
 *
 * Return: returns -1 if n is negative, if n is 0 it returns 1,
 * otherwise returns n value of factorial.
-*
 */
 
 int factorial(int n)
