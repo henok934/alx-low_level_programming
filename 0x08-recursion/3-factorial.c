@@ -1,6 +1,6 @@
 #include "main.h"
+
 /**
- *
 * factorial.c - Calculates and returns the factorial of a given number.
 *
 * @s: The string whose factorial of the given number.
