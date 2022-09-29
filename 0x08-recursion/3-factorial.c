@@ -1,11 +1,14 @@
 #include "main.h"
 
 /**
-* factorial.c - Calculates and returns the factorial of a given number.
+* factorial - Calculates and returns the factorial of a given number.
 *
-* @s: The string whose factorial of the given number.
+* number
 *
-* Return: returns the factorial of given number.
+* @n: The string whose factorial of the given number computed.
+*
+* Return: returns -1 if n is negative, if n is 0 it returns 1,
+* otherwise returns n value of factorial.
 *
 */
 
