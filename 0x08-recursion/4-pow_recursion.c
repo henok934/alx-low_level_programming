@@ -1,11 +1,15 @@
 #include "main.h"
 
 /**
-* _pow_recursion - function that returns the value power.
-* @x: The integer number whose power to be computed.
-* @y: The integer number raised to the power of x.
-* Return: returns y is lower than 0, the function should return -1,
-* otherwise return x raised to the power of y.
+*_pow_recursion - Computes x raised to y
+*
+* @x: The number to be raised
+* @y: The power
+*
+* Return: If y is less than 0 it returns -1, if y is 1, it
+* returns x, and if it y is 0 it returns 1 otherwise
+* it returns the result.
+*
 */
 
 int _pow_recursion(int x, int y)
