@@ -1,14 +1,19 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include<stdio.h>
 
-void main(int argc, char *argv[]
+/**
+* main - functon returns the value of argc and argv.
+*
+*@argc: returns the value of the argc.
+*of the array argv
+*@argv: returns only for in array value.
+*
+*return: the value return.
+*
+*/
+
+int main(int argc, char **argv)
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-
-	priintf("./mynameis\n", i, argv[i]);
+	if (argc)
+		printf("%s", *argv);
 	return (0);
-}
 }
