@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - manipulates the return value
- *
- * return: always return success
- */
+* main - prints the name of the file
+*
+* Return: Always 0 (Success)
+*/
 
 int main(void)
 {
