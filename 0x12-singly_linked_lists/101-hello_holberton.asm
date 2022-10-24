@@ -2,9 +2,9 @@
 
 ; File: 101-hello_holberton.asm
 
-; Author: Gizachew Bayness (eleccrazy)
+; Author: Teklemariam Mossie
 
-; Date Created: May 19, 2022
+; Date Created: oct 19, 2022
 
 extern printf
 
