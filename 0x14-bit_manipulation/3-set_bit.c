@@ -1,16 +1,21 @@
 #include "main.h"
 
 /**
-  * print_binary - Prints a binary representation of a number.
-  * @n: The number to be printed.
-  */
-void print_binary(unsigned long int n)
+ * set_bit - Sets the value of bit at index to 1.
+ * @n: A pointer to the bit
+ * @index: The index at which the bit is to be set.
+ * Return: Returns -1, if an error occurs, otherwise it ret
+ */
+
+int set_bit(unsigned long int *n, unsigned int index)
 {
 
-	if (n >= 2)
+	if (index > sizeof(unsigned long int) * 8)
 
-		print_binary(n >> 1);
+		return (-1);
 
-	_putchar((n & 1) + '0');
+	*n = *n | (1 << index);
+
+	return (1);
 
 }
