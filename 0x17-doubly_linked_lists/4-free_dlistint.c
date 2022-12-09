@@ -7,17 +7,13 @@
  */
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *savepoin;
+	dlistint_t *tek;
 
-	if (head != NULL)
+	while (head)
 	{
-		while (head->prev != NULL)
-			head = head->prev;
-		while (head != NULL)
-		{
-			savepoin = head->next;
-			free(head);
-			head = savepoin;
-		}
+		tek = head->next;
+		free(head);
+		head = tek;
 	}
+	head = NULL;
 }
