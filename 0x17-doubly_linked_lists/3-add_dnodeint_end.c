@@ -1,6 +1,5 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <stddef.h>
 /**
  * add_dnodeint_end - add a node at the end of a double linked list
  * @head: header of double linked list
@@ -9,28 +8,27 @@
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *new, *headcopy;
+	dlistint_t *new;
+	dlistint_t *tempo;
 
-	headcopy = *head;
-	if (head == NULL)
-		return (NULL);
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
 		return (NULL);
 	new->n = n;
+	new->prev = NULL;
 	if (*head == NULL)
 	{
-		new->next = NULL;
 		new->prev = NULL;
 		*head = new;
 	}
 	else
 	{
-		while (headcopy->next != NULL)
-			headcopy = headcopy->next;
-		new->next = NULL;
-		new->prev = headcopy;
-		headcopy->next = new;
+		tempo = *head;
+		while (tempo->next != NULL)
+			tempo->next = tempo;
+		tempo->next = new;
+		new->prev = tempo;
+		*head = new;
 	}
 	return (new);
 }
