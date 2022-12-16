@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc test.o -fPIC -shared -o libtest.so
-LD_PRELOAD=$PWD/libtest.so
+wget -P /tmp/ https://raw.githubusercontent.com/root@96701e073f37/alx-low_level_programming/master/0x18-dynamic_libraries/libtest.so
+export LD_PRELOAD=/tmp/libtest.so
