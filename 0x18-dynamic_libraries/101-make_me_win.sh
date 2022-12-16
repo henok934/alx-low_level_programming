@@ -1,3 +1,4 @@
 #!/bin/bash
-gcc -c test.c -fpic
-gcc -shared -o libtest.so test.o
+gcc *.o -fPIC -shared -o libtek.so
+
+LD_PRELOAD=$PWD/libtek.so
